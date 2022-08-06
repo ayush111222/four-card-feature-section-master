@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+### Neutral
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%) */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+main{
+    width: 1400px;
+    margin-top: 2rem;
+    
+}
+main article{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+main article h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    color: hsl(229, 6%, 66%);
+}
+main article h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: hsl(234, 12%, 34%);
+}
+main article p{
+    color: hsl(229, 6%, 66%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+section .box{
+    /* min-height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .box div{
+    background: white;
+    width: 90%;
+    height: 230px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+section .box div h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+section .box div p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-bottom: 3.5rem;
+}
+section .box div img{
+    width: 60px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.item-1{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.item-2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.item-3{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.item-4{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+section .item-box{
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 1300px){
+    section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    main article{
+        width: 70%;
+    }
+    .item-4{
+        margin-top: -100px;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 850px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    main article{
+        width: 70%;
+    }
+    section .box div{
+        width: 90%;
+    }
+    main{
+        margin: 2rem 1rem;
+    }
+    .item-4{
+        margin-top: 0;
+    }
+}
