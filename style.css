@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-/* font-family: 'Poppins', sans-serif; */
-/* - Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
-- Orange: hsl(34, 97%, 64%)
-- Blue: hsl(212, 86%, 64%)
-### Neutral
-- Very Dark Blue: hsl(234, 12%, 34%)
-- Grayish Blue: hsl(229, 6%, 66%)
-- Very Light Gray: hsl(0, 0%, 98%) */
 .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -20,15 +11,16 @@
     box-sizing: border-box;
 }
 body{
-    background: hsl(0, 0%, 98%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     font-size: 15px;
 }
 main{
-    width: 1400px;
-    margin-top: 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(0, 0%, 98%);
     
 }
 main article{
@@ -62,7 +54,6 @@ section{
     
 }
 section .box{
-    /* min-height: 500px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +66,7 @@ section .box div{
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 20px;
     position: relative;
 }
 section .box div h3{
